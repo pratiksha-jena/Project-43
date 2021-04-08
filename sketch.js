@@ -4,16 +4,20 @@ function setup() {
   createCanvas(800,400);
  
 
-  sc = second();
-  mn = minute();
-  hr = hour();
-
+ 
   angleMode(DEGREES);
-  scAngle = map(sc,0,60,0,360);
+  
 }
 
 function draw() {
   background("black"); 
+
+  sc = second();
+  mn = minute();
+  hr = hour();
+
+
+  scAngle = map(sc,0,60,0,360);
 
   push();
   rotate(scAngle);
